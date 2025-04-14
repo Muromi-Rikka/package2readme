@@ -1,0 +1,53 @@
+{
+  "name": "package2readme",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "email": "admin@rikka.cc",
+    "name": "Rikka",
+    "url": "https://github.com/Muromi-Rikka"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Muromi-Rikka/package2readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muromi-Rikka/package2readme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Muromi-Rikka/package2readme/issues"
+  },
+  "keywords": [
+    "unjs",
+    "tsup",
+    "cli",
+    "template"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "package2readme": "./bin/run"
+  },
+  "scripts": {
+    "start": "ts-node ./bin/run.ts",
+    "start:node": "pnpm run build && node ./bin/run",
+    "build": "tsup-node",
+    "build:watch": "tsup-node --watch"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "consola": "^3.4.2",
+    "picocolors": "^1.1.1",
+    "pkg-types": "^2.1.0",
+    "rc9": "^2.1.2",
+    "ufo": "^1.6.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.12.0",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.24.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
